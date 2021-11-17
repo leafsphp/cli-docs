@@ -19,8 +19,8 @@ const sidebar = {
 }
 
 module.exports = {
-  title: 'Leaf PHP',
-  description: 'Leaf PHP - Simple and Elegant PHP',
+  title: 'Leaf CLI',
+  description: 'Leaf PHP - Next gen tooling for your leaf apps',
   head: [
     [
       'link',
@@ -180,7 +180,7 @@ module.exports = {
       '/aloe-cli/': sidebar.aloe,
       '/cli/': sidebar.cli,
       '/community/': sidebar.community,
-      '/coc/': sidebar.community,
+      '/coc/': sidebar.community
     },
     smoothScroll: true,
     algolia: {
