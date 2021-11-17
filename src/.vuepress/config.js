@@ -108,6 +108,11 @@ module.exports = {
         link: '/docs/'
       },
       {
+        text: 'Leaf Docs',
+        ariaLabel: 'Leaf Documentation',
+        link: 'https://leafphp.dev'
+      },
+      {
         text: 'Ecosystem',
         items: [
           {
