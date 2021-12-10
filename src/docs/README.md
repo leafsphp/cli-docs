@@ -8,7 +8,7 @@ title: Intro
 ![Total Downloads](https://poser.pugx.org/leafs/cli/downloads)
 
 ::: tip
-Leaf CLI 2 has just been released. Check out the docs [here](/cli/v/2.0/)
+Leaf CLI 2 has just been released. Check out the docs [here](/docs/v/2.0/)
 :::
 
 A simple command line tool for creating  and interacting with your leaf projects. You can do stuff like installing packages, interacting with your app, previewing your app...

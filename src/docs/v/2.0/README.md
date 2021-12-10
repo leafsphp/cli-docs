@@ -15,6 +15,12 @@ Unlike v1, v2 supports all leaf scaffolds: leaf, leaf mvc, leaf api and skeleton
 To find out what's new, you can [read the changelog](https://github.com/leafsphp/cli/releases/latest)
 :::
 
+## Upgrading
+
+You can upgrade from v1 by simply running the [installation script](/docs/#installation).
+
+Version 2 of Leaf CLI has auto upgrades which means that it will keep itself up to date.
+
 ## Creating a leaf app
 
 To start a new project, simply open up your console or terminal and move into the directory you want to generate your project. From there, you can use the `create` command:
@@ -23,22 +29,24 @@ To start a new project, simply open up your console or terminal and move into th
 leaf create <project-name>
 ```
 
-or with leaf 3:
+with leaf 3:
 
 ```sh
 leaf create <project-name> --v3
 ```
 
-::: tip
-Note that the leaf 3 has not yet been released. This is why the default installation uses leaf 2. After the main v3 is released, leaf cli will switch to leaf 3 for its default installations.
-:::
+or with leaf 2:
+
+```sh
+leaf create <project-name> --v2
+```
 
 This will now prompt you to select a preset <Badge text="New in v2" />
 
 ```sh
 Creating a new Leaf app "<project-name>" in ./projects-directory.
 
-Please pick a preset 
+* Please pick a preset 
   [0] leaf
   [1] leaf mvc
   [2] leaf api
@@ -57,7 +65,16 @@ Selecting a number will generate a leaf app based on the associated preset. As y
 - **Leaf API**: a leaf API project with leaf 2
 - **Skeleton**: a leaf skeleton project
 
-After picking a preset, your project will be automatically generated and initialized. All you need to do is open it up and start coding 🚀
+After picking a preset, if no version was specified, leaf will display an interactive version picker like the one above:
+
+```sh
+* Select a version to use 
+  [0] v3
+  [1] v2
+ >
+```
+
+your project will be automatically generated and initialized. All you need to do is open it up and start coding 🚀
 
 ### Quick presets
 
@@ -69,7 +86,7 @@ This will create a leaf api project named `backend-api`.
 
 ### Versioning
 
-Just as promised, leaf CLI now allows you use the dev version of leaf 3 packages, and with that, all packages now support leaf 3. This means that you can seamlessly follow leaf 3's development by running one command.
+If no version is specified, leaf displays the interactive installer to you, however, to quickly install a particular version, you can use the `--v2` or `--v3` options. These can be coupled with presets as well.
 
 Leaf API 3 example:
 
