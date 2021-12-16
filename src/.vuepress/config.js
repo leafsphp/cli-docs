@@ -166,7 +166,7 @@ module.exports = {
       },
       {
         text: 'Support Leaf',
-        link: '/support/'
+        link: 'https://leafphp.dev/support/'
       }
     ],
     repo: 'leafsphp/docs',
