@@ -111,10 +111,44 @@ leaf serve -p 3000
 
 ## Installing packages
 
-This cli tool also adds a feature to install leaf packages from composer
+This cli tool also adds a feature to install leaf packages from composer.
 
 ```bash
+leaf install leafs/ui
+```
+
+If you are installing a leaf module or package, you can leave out the `leafs/` part.
+
+```sh
 leaf install ui
+```
+
+You can also pass in a bunch of packages to install at once.
+
+```sh
+leaf install ui db illuminate/support
+```
+
+***Versioning <Badge text="new in 2.0.5" />***
+
+Leaf CLI also allows you to install a particular version of any package using `@`
+
+```sh
+leaf install ui@1.0 illuminate/support@9.0.2
+```
+
+***Package Chaining <Badge text="new in 2.0.5" />***
+
+You can now add a bunch of packages to install as done with composer, npm and other CLIs as well.
+
+```sh
+leaf install db illuminate/support
+```
+
+Using this method, you can even add specific versions of some packages like this:
+
+```sh
+leaf install db illuminate/support@9.0.2 nesbot/carbon
 ```
 
 ## Interactive Shell
