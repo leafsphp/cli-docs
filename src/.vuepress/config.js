@@ -137,10 +137,6 @@ module.exports = {
                 link: 'https://leafphp.dev/aloe-cli/'
               },
               {
-                text: 'Leaf CLI',
-                link: 'https://leafphp.dev/cli/'
-              },
-              {
                 text: 'Leaf Modules',
                 link: 'https://leafphp.dev/modules/'
               },

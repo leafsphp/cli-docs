@@ -63,5 +63,5 @@ source ~/.bashrc
 
 ## Versions
 
-- [Version 1 Docs](/cli/v/1.0/)
-- [Version 2 Docs](/cli/v/2.0/)
+- [Version 1 Docs](/docs/v/1.0/)
+- [Version 2 Docs](/docs/v/2.0/)
