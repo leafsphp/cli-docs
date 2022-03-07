@@ -15,6 +15,12 @@ A simple command line tool for creating  and interacting with your leaf projects
 
 ## Installation
 
+::: info Video Docs
+You can take a look at our leaf cli setup walkthrough on youtube.
+
+<VideoLesson href="https://www.youtube.com/watch?v=yb3LUYHtopQ" title="Install leaf PHP">Watch the leaf 3 installation walkthrough</VideoLesson>
+:::
+
 You can get this tool up and running on your system using composer:
 
 ```bash
