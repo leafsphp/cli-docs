@@ -115,6 +115,12 @@ You can also specify the port to run your leaf app on using the `--port` or `-p`
 leaf serve -p 3000
 ```
 
+::: info Video Docs
+You can take a look at our leaf cli video on youtube.
+
+<VideoLesson href="https://www.youtube.com/watch?v=K9jSl_xpr48" title="Working with packages on the Leaf CLI">Working with packages and the leaf cli</VideoLesson>
+:::
+
 ## Installing packages
 
 This cli tool also adds a feature to install leaf packages from composer.
