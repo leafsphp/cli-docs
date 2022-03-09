@@ -23,6 +23,12 @@ Version 2 of Leaf CLI has auto upgrades which means that it will keep itself up 
 
 ## Creating a leaf app
 
+::: info Video Docs
+You can take a look at our leaf cli video on youtube.
+
+<VideoLesson href="https://www.youtube.com/watch?v=PuOk5xqTIsA" title="Install leaf PHP">Learn how to generate leaf apps with the create command</VideoLesson>
+:::
+
 To start a new project, simply open up your console or terminal and move into the directory you want to generate your project. From there, you can use the `create` command:
 
 ```bash
