@@ -9,13 +9,23 @@ title: "Version 2.0"
 
 Leaf CLI v2 (Sugar Maple) builds on the functionality provided by the earlier version. It comes with faster load times, full scaffolds, bug fixes and a ton of other powerful functionality. You can now work with presets, scaffold projects using both v2 and v3 of leaf.
 
-Unlike v1, v2 supports all leaf scaffolds: leaf, leaf mvc, leaf api and skeleton. It also uses in-built scaffolds instead of zip files packaged on leaf downloads coupled with composer downloads which make Leaf CLI 2 faster and even more reliable.
+Unlike leaf CLI v1, v2 supports all leaf scaffolds: leaf, leaf mvc, leaf api and skeleton. It also uses in-built scaffolds instead of zip files packaged on leaf downloads coupled with composer downloads which make Leaf CLI 2 faster and even more reliable.
 
 ::: tip What's new?
 To find out what's new, you can [read the changelog](https://github.com/leafsphp/cli/releases/latest)
 :::
 
-## Upgrading
+## Installation
+
+You can quickly install Leaf CLI using composer. Simply run:
+
+```sh
+composer global require leafs/cli
+```
+
+You may have to add your composer bin directory to your system paths to use the `leaf` command from everywhere. Full steps to do that can be found on the [installation page](/docs/#installation).
+
+## Upgrading from v1
 
 You can upgrade from v1 by simply running the [installation script](/docs/#installation).
 
@@ -115,6 +125,10 @@ You can also specify the port to run your leaf app on using the `--port` or `-p`
 leaf serve -p 3000
 ```
 
+### Dependency Management <Badge text="New in v2.0.10" />
+
+The serve command also now installs dependencies when there is no `vendor` folder present in the current working directory.
+
 ::: info Video Docs
 You can take a look at our leaf cli video on youtube.
 
@@ -185,10 +199,27 @@ v2 contains an easy way to quickly update leaf cli to the latest version.
 leaf update
 ```
 
+## Running Scripts <Badge text="New in v2.0.9" />
+
+Leaf CLI also now allows you run scripts defined in your `composer.json` file. For example, if you have this in your composer.json:
+
+![image](https://user-images.githubusercontent.com/26604242/166419297-225b0b00-c979-4096-a23d-4f7858def8fb.png)
+
+You can run the test script like this:
+
+```sh
+leaf run test
+```
+
 ## Usage Guide
 
 ```sh
-Leaf CLI 2.0.0
+
+ _              __    ___ _    ___ 
+| |   ___ __ _ / _|  / __| |  |_ v2.0.10
+| |__/ -_) _` |  _| | (__| |__ | | 
+|____\___\__,_|_|    \___|____|___|                       
+
 
 Usage:
   command [options] [arguments]
@@ -202,13 +233,16 @@ Options:
   -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
 Available commands:
-  create        Create a new Leaf PHP project
-  help          Display help for a command
-  install       Add a new package to your leaf app
-  interact      Interact with your application
-  list          List commands
-  serve         Run your Leaf app
-  update        Update leaf cli to the latest version
+  completion  Dump the shell completion script
+  create      Create a new Leaf PHP project
+  help        Display help for a command
+  install     Add a new package to your leaf app
+  interact    Interact with your application
+  list        List commands
+  run         Run a script in your composer.json
+  serve       Run your Leaf app
+  uninstall   Uninstall a  package
+  update      Update leaf cli to the latest version
 ```
 
 This is the full list of commands available with Leaf CLI 2. A new update command has been added to allow you seamlessly update leaf CLI without having to run a bunch of commands. You don't even need to run this manually since leaf cli will automatically check for updates and upgrade to the latest stable release.
