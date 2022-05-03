@@ -4,10 +4,6 @@ title: "Version 1.0"
 
 # 💻 Leaf CLI v1.0
 
-![Latest Stable Version](https://poser.pugx.org/leafs/cli/v/stable)
-![Total Downloads](https://poser.pugx.org/leafs/cli/downloads)
-
-
 ## 📂 Installation
 
 You can get this tool up and running on your system using composer:
