@@ -125,6 +125,8 @@ You can also specify the port to run your leaf app on using the `--port` or `-p`
 leaf serve -p 3000
 ```
 
+### File watching <Badge text="New in v2.1.0" />
+
 In v2.1, you can also start the leaf server with hot module watching. This reloads your application anytime a change is made to your application code. To get started, simply start the leaf server with the `--watch` flag.
 
 ```sh
