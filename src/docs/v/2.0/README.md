@@ -92,6 +92,16 @@ After picking a preset, if no version was specified, leaf will display an intera
 
 your project will be automatically generated and initialized. All you need to do is open it up and start coding 🚀
 
+### Adding Tests <Badge text="New in v2.3" />
+
+From Leaf CLI v2.3, you will be asked if you want to add tests to your project. You can add tests by replying `y`.
+
+```sh
+* Add testing with Leaf Alchemy? [y, n] y
+
+ - Adding alchemy for tests
+```
+
 ### Quick presets
 
 Leaf CLI also provides a quicker way to initialize your project without having to go through the interactive installer. You can use the `--mvc`, `--api`, `--basic` and `--skeleton` options to generate your project based on a specific presets. `--basic` generates a raw leaf project.
@@ -142,6 +152,32 @@ You can take a look at our leaf cli video on youtube.
 
 <VideoLesson href="https://www.youtube.com/watch?v=K9jSl_xpr48" title="Working with packages on the Leaf CLI">Working with packages and the leaf cli</VideoLesson>
 :::
+
+## Testing your Leaf apps <Badge text="new in 2.3.0" />
+
+Testing helps prevent bugs in your app which you may not catch until you publish your app to production. Leaf introduced a test runner which helps you initialize testing and run tests in your app without needing any config first. Alchemy has also been integrated into the Leaf CLI and so you can use it's functionality directly.
+
+### Setting up tests
+
+Leaf CLI allows you to setup tests in your project with one command:
+
+```sh
+leaf test:setup
+```
+
+This command will generate Pest PHP tests for your application. If you however want to use PHPUnit, you'll need to pass the `--phpunit` option to the command.
+
+```sh
+leaf test:setup --phpunit
+```
+
+### Running tests
+
+To run tests you've setup or created, you can simply run the `test` command.
+
+```sh
+leaf test
+```
 
 ## Installing packages
 
