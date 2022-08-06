@@ -258,9 +258,8 @@ leaf run test
 ## Usage Guide
 
 ```sh
-
  _              __    ___ _    ___ 
-| |   ___ __ _ / _|  / __| |  |_ v2.0.10
+| |   ___ __ _ / _|  / __| |  |_ v2.3.0
 | |__/ -_) _` |  _| | (__| |__ | | 
 |____\___\__,_|_|    \___|____|___|                       
 
@@ -278,15 +277,19 @@ Options:
 
 Available commands:
   completion  Dump the shell completion script
-  create      Create a new Leaf PHP project
+  create      [init] Create a new Leaf PHP project
+  deploy      [publish] Deploy your leaf project
   help        Display help for a command
   install     Add a new package to your leaf app
   interact    Interact with your application
   list        List commands
   run         Run a script in your composer.json
   serve       Run your Leaf app
+  test        Test your leaf application through leaf alchemy
   uninstall   Uninstall a  package
   update      Update leaf cli to the latest version
+ test
+  test:setup  Add tests to your application
 ```
 
 This is the full list of commands available with Leaf CLI 2. A new update command has been added to allow you seamlessly update leaf CLI without having to run a bunch of commands. You don't even need to run this manually since leaf cli will automatically check for updates and upgrade to the latest stable release.
